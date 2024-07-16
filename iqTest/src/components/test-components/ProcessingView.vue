@@ -7,7 +7,7 @@ const router = useRouter()
 onMounted(() => {
   setTimeout(() => {
     router.push('/result')
-  }, 200000)
+  }, 2000)
 })
 </script>
 
