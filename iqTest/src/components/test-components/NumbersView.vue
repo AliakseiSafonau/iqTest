@@ -51,6 +51,7 @@ defineEmits(['handle-click'])
   }
 
   .answers label{
+    cursor: pointer;
     font-family: 'PTSerifRegular',serif;
     color: #ffffff;
     display: grid;

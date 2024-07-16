@@ -148,7 +148,9 @@
 
   .recommendations{
     width: 100%;
-    background: url("../assets/images/image1.png");
+    background: no-repeat url("../assets/images/image1.png");
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
   }

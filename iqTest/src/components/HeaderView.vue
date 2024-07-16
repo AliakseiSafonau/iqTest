@@ -18,7 +18,6 @@
   watch(
     () => route.params.id,
     (newId, oldId) => {
-      console.log(route.name, route.params.id)
       if(route.name === 'result') {
         headerBrain.value = 'result'
       } else {
@@ -98,6 +97,10 @@
     gap: 20px;
   }
 
+  .header__min-content{
+    display: none;
+  }
+
   .nav__link, .nav__link__item{
     font-family: RobotoLight,serif;
     color: #cdcdcd;
@@ -123,6 +126,8 @@
     }
 
     .header__min-content{
+      display: flex;
+      justify-content: center;
       width: 100%;
     }
 
@@ -237,6 +242,8 @@
 
     .header__min-content__div{
       display: flex;
+      justify-content: center;
+      margin-left: -35px;
       color: white;
       width: 100%;
     }

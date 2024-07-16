@@ -1,6 +1,6 @@
 <script setup>
 import '../../fonts.css'
-import {onMounted, ref} from "vue";
+import {ref} from "vue";
 import FetchData from "../../components/test-components/FetchData.vue";
 const jsonData = ref(null)
 
@@ -15,7 +15,7 @@ const setTime = (data=false) => {
 const myTimer = setInterval(() => {
   timer--
   if (timer < 0) {clearInterval(myTimer); setTime(true)}
-  setTime()
+  else setTime()
 }, 1000)
 
 const fetchData = () => {
@@ -156,6 +156,7 @@ const fetchData = () => {
     color: white;
     gap: 18px;
     border-radius: 5px;
+    cursor: pointer;
   }
 
   .result-004 span{

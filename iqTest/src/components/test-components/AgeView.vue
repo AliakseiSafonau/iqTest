@@ -55,6 +55,7 @@ defineEmits(['handle-click'])
     width: 320px;
     padding-left: 35px;
     align-items: center;
+    cursor: pointer;
     transition: all 120ms ease-in-out;
   }
 

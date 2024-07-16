@@ -56,6 +56,7 @@ defineEmits(['handle-click'])
     align-items: center;
     outline: 6px solid rgba(0, 0, 0, 0);
     outline-offset: -6px;
+    cursor: pointer;
     transition: all 120ms ease-in-out;
   }
 
